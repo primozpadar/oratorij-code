@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: 'Example Markdown page'
-description: 'Random opis neke strani'
+description: 'Random opis neke stRandom opis neke druge straniRandom opis neke druge straniRandom opis neke druge straniRandom opis neke druge stranirani'
 ---
 
 ```javascript

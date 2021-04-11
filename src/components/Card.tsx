@@ -3,21 +3,30 @@ import styled from 'styled-components';
 
 interface Props {
   title: string;
+  description: string;
   icon: JSX.Element;
 }
 
-const Card: React.FC<Props> = ({ title, icon, children }) => (
+const Card: React.FC<Props> = ({ title, icon, description }) => (
   <Container>
     <Header>
       <h2>{title}</h2>
       {icon}
     </Header>
     <Divider />
-    <Content>{children}</Content>
+    <Content>
+      {description.length > 120
+        ? description
+            .split('')
+            .slice(0, 120)
+            .join('') + ' ...'
+        : description}
+    </Content>
   </Container>
 );
 
 const Container = styled.div`
+  height: 100%;
   background: ${props => props.theme.blue};
   padding: 1rem 1.4rem;
   box-shadow: 0 0.4rem 1rem 0 rgba(2, 8, 15, 0.4);

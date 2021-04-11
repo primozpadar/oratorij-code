@@ -1,7 +1,7 @@
 ---
 layout: guide
-title: 'Random page 1'
-description: 'Random opis neke druge strani 1'
+title: 'Random page 2'
+description: 'Random opis neke druge strani'
 ---
 
 Nek markdown tekst nekineki

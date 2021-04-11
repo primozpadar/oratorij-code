@@ -4,7 +4,11 @@ import theme from './theme';
 export default createGlobalStyle`
   :root{
     --nav-height: 5rem;
-    --site-margin: 4rem;
+    --site-margin: 10rem;
+
+    @media (max-width: 1250px){
+      --site-margin: 6rem;
+    }
 
     @media (max-width: 800px){
       --site-margin: 1rem;

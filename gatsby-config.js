@@ -19,15 +19,24 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 1140,
-              quality: 90,
+              maxWidth: 1500,
+              withWebp: true,
+              quality: 100,
               linkImagesToOriginal: false,
+              wrapperStyle: fluid => `max-width:${(fluid.aspectRatio * 40).toFixed(2)}vh !important;`,
             },
           },
           {

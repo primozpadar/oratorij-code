@@ -26,9 +26,7 @@ const index: React.FC<Props> = ({ data }) => (
     <CardsContainer>
       {data.allMarkdownRemark.edges.map(({ node: { fields: { slug, title, description } } }) => (
         <Link to={slug} key={slug}>
-          <Card title={title} icon={<CodeIcon />}>
-            {description}
-          </Card>
+          <Card title={title} description={description} icon={<CodeIcon />} />
         </Link>
       ))}
     </CardsContainer>
