@@ -12,7 +12,7 @@ export type ThemeType = typeof theme;
 
 // declaration of DefaultTheme for further use in styled components
 declare module 'styled-components' {
-  export interface DefaultTheme extends ThemeType {}
+  export type DefaultTheme = ThemeType;
 }
 
 export default theme;

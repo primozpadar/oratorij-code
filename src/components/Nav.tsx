@@ -1,7 +1,7 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import { GithubIcon } from './styles/Icons';
-import { Link } from 'gatsby';
 
 const Nav: React.FC = () => (
   <Container>
@@ -42,7 +42,7 @@ const Title = styled.h1`
     left: -0.4rem;
     width: 40%;
     height: 1rem;
-    background: ${props => props.theme.greenDark};
+    background: ${(props) => props.theme.greenDark};
 
     @media (max-width: 800px) {
       height: 0.8rem;

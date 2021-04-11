@@ -4,6 +4,7 @@ import styled from 'styled-components';
 interface Props {
   title: string;
   description: string;
+  // eslint-disable-next-line no-undef
   icon: JSX.Element;
 }
 
@@ -14,20 +15,13 @@ const Card: React.FC<Props> = ({ title, icon, description }) => (
       {icon}
     </Header>
     <Divider />
-    <Content>
-      {description.length > 120
-        ? description
-            .split('')
-            .slice(0, 120)
-            .join('') + ' ...'
-        : description}
-    </Content>
+    <Content>{description.length > 120 ? `${description.split('').slice(0, 120).join('')} ...` : description}</Content>
   </Container>
 );
 
 const Container = styled.div`
   height: 100%;
-  background: ${props => props.theme.blue};
+  background: ${(props) => props.theme.blue};
   padding: 1rem 1.4rem;
   box-shadow: 0 0.4rem 1rem 0 rgba(2, 8, 15, 0.4);
   border-radius: 0.6rem;
@@ -47,7 +41,7 @@ const Header = styled.div`
 
   h2 {
     font-size: 1.4rem;
-    color: ${props => props.theme.green};
+    color: ${(props) => props.theme.green};
     margin-right: 0.6rem;
 
     @media (max-width: 800px) {
@@ -66,7 +60,7 @@ const Header = styled.div`
   svg {
     height: 1.8rem;
     width: 1.8rem;
-    fill: ${props => props.theme.green};
+    fill: ${(props) => props.theme.green};
 
     @media (max-width: 300px) {
       height: 1rem;
@@ -79,12 +73,12 @@ const Divider = styled.div`
   width: 100%;
   height: 2px;
   border-radius: 1rem;
-  background: ${props => props.theme.green};
+  background: ${(props) => props.theme.green};
   margin: 0.8rem 0;
 `;
 
 const Content = styled.div`
-  color: ${props => props.theme.white};
+  color: ${(props) => props.theme.white};
   font-size: 1rem;
   font-family: 'Open Sans';
 `;
