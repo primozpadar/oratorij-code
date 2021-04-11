@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
 import styled from 'styled-components';
+import Layout from '../components/Layout';
 
 interface PageTemplateProps {
   data: {
@@ -26,7 +26,7 @@ interface PageTemplateProps {
 }
 
 const PageTemplate: React.FC<PageTemplateProps> = ({ data }) => (
-  <Layout>
+  <Layout title={data.markdownRemark.frontmatter.title}>
     <Content>
       <h1>{data.markdownRemark.frontmatter.title}</h1>
       {/* eslint-disable-next-line react/no-danger */}
@@ -49,7 +49,7 @@ const Content = styled.div`
     font-style: italic;
     margin: 1rem auto 1rem;
     padding-left: 0.4rem;
-    border-left: 0.4rem solid ${props => props.theme.greenDark};
+    border-left: 0.4rem solid ${(props) => props.theme.greenDark};
   }
 
   pre {
@@ -65,7 +65,7 @@ const Content = styled.div`
   hr {
     width: 100%;
     height: 1px;
-    background: ${props => props.theme.blue};
+    background: ${(props) => props.theme.blue};
     margin: 1rem 0;
   }
 
@@ -73,7 +73,7 @@ const Content = styled.div`
   h2 {
     padding: 1rem 0 0.1rem 0;
     margin-bottom: 0.8rem;
-    border-bottom: 1px solid ${props => props.theme.blueLight};
+    border-bottom: 1px solid ${(props) => props.theme.blueLight};
     page-break-after: avoid;
   }
 

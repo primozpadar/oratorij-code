@@ -35,17 +35,22 @@ const Layout: React.FC<Props> = ({ title, children }) => {
     }
   `);
 
-  const generatedTitle = title ? `${title} | ${data.site.siteMetadata.title}` : data.site.siteMetadata.title;
-
   return (
     <>
       <Helmet
-        title={generatedTitle}
+        titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+        defaultTitle={title}
+        title={title}
+        htmlAttributes={{ lang: 'sl' }}
         meta={[
+          { charSet: 'utf-8' },
           { name: 'description', content: data.site.siteMetadata.description },
           { name: 'keywords', content: data.site.siteMetadata.keywords },
-          { property: 'og:title', content: generatedTitle, key: 'ogtitle' },
-          { property: 'og:description', content: data.site.siteMetadata.description },
+          { property: 'og:title', content: title, key: 'ogtitle' },
+          {
+            property: 'og:description',
+            content: data.site.siteMetadata.description,
+          },
           { property: 'og:url', content: data.site.siteMetadata.siteUrl },
         ]}
         link={[
