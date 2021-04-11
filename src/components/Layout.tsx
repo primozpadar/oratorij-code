@@ -13,6 +13,7 @@ interface QueryProps {
       title: string;
       description: string;
       keywords: string;
+      siteUrl: string;
     };
   };
 }
@@ -28,18 +29,30 @@ const Layout: React.FC<Props> = ({ title, children }) => {
         siteMetadata {
           title
           description
+          siteUrl
         }
       }
     }
   `);
 
+  const generatedTitle = title ? `${title} | ${data.site.siteMetadata.title}` : data.site.siteMetadata.title;
+
   return (
     <>
       <Helmet
-        title={title ? `${title} | ${data.site.siteMetadata.title}` : data.site.siteMetadata.title}
+        title={generatedTitle}
         meta={[
           { name: 'description', content: data.site.siteMetadata.description },
           { name: 'keywords', content: data.site.siteMetadata.keywords },
+          { property: 'og:title', content: generatedTitle, key: 'ogtitle' },
+          { property: 'og:description', content: data.site.siteMetadata.description },
+          { property: 'og:url', content: data.site.siteMetadata.siteUrl },
+        ]}
+        link={[
+          { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+          { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+          { rel: 'icon', type: 'image/webp', href: '/favicon.webp' },
+          { rel: 'alternate icon', href: '/favicon.ico' },
         ]}
       />
       <GlobalStyle />
