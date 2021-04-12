@@ -8,9 +8,10 @@ const Nav: React.FC = () => (
     <Link to="/">
       <Title>Oratorij Code</Title>
     </Link>
-    <a href="https://github.com/primozpadar">
+    <GithubLink href="https://github.com/primozpadar">
       <GithubIcon />
-    </a>
+      <span>Github</span>
+    </GithubLink>
   </Container>
 );
 
@@ -18,6 +19,17 @@ const Container = styled.div`
   margin: 0 var(--site-margin);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  span {
+    margin-left: 0.4rem;
+    font-weight: bold;
+  }
+`;
+
+const GithubLink = styled.a`
+  display: flex;
+  justify-content: center;
   align-items: center;
 `;
 
