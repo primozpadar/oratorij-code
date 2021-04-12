@@ -3,7 +3,7 @@ module.exports = {
     title: 'Oratorij Code',
     description: 'Spletna stran za enostavno učenje programiranja na oratorijskih delavnicah.',
     keywords: 'oratorij, programiranje, oratorijska delavnica',
-    siteUrl: 'https://oratorij-code.netlify.com',
+    siteUrl: 'https://code.oratorijzelimlje.si',
     author: {
       name: 'Primož Padar',
       url: 'https://github.com/primozpadar',
@@ -36,7 +36,7 @@ module.exports = {
               withWebp: true,
               quality: 100,
               linkImagesToOriginal: false,
-              wrapperStyle: fluid => `max-width:${(fluid.aspectRatio * 40).toFixed(2)}vh !important;`,
+              wrapperStyle: (fluid) => `max-width:${(fluid.aspectRatio * 40).toFixed(2)}vh !important;`,
             },
           },
           {
