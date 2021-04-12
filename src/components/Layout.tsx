@@ -54,7 +54,6 @@ const Layout: React.FC<Props> = ({ title, children }) => {
           { property: 'og:url', content: data.site.siteMetadata.siteUrl },
         ]}
         link={[
-          { rel: 'canonical', href: data.site.siteMetadata.siteUrl },
           { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
           { rel: 'icon', type: 'image/png', href: '/favicon.png' },
           { rel: 'icon', type: 'image/webp', href: '/favicon.webp' },
