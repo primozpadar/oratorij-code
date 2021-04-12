@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://oratorij-code.netlify.com',
+        siteUrl: 'https://code.oratorijzelimlje.si/',
       },
     },
     {
