@@ -31,7 +31,7 @@ export default createGlobalStyle`
     overflow-x:hidden;
   }
 
-  Custom scrollbar
+  /* Custom scrollbar */
   ::-webkit-scrollbar-track {
     background: ${theme.blueDark};
   }
@@ -47,6 +47,16 @@ export default createGlobalStyle`
   /* Code theme (prismjs) */
   pre * {
   	font-family: Inconsolata;
+  }
+
+  .gatsby-highlight-code-line {
+    background-color: #1A3A65;
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #0FD990;
   }
 
   code[class*="language-"],

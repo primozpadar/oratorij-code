@@ -45,10 +45,11 @@ const Content = styled.div`
   }
 
   blockquote {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    opacity: 0.9;
     font-style: italic;
     margin: 1rem auto 1rem;
-    padding-left: 0.4rem;
+    padding-left: 0.8rem;
     border-left: 0.4rem solid ${(props) => props.theme.greenDark};
   }
 
