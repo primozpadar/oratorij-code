@@ -83,6 +83,11 @@ const Content = styled.div`
   h5 {
     margin: 0.8rem 0 0.2rem 0;
   }
+
+  a {
+    color: ${(props) => props.theme.green};
+    text-decoration: underline;
+  }
 `;
 
 export default PageTemplate;
