@@ -27,7 +27,7 @@ Je standardni jezik za ustvarjanje spletnih strani, ki opisuje **strukturo**. Vs
 
 Vsaka spletna stran je sestavljena iz oznak, kot je na primer `<p>`, zaključne oznake `</p>` ter vsebine vmes. Črka, v tem primeru `p`, določa vrsto oznake - več o tem v nadaljevanju.
 
-![HTML Tag](../images/html_tag.png)
+![HTML Tag](../images/html-spletna-stran/html_tag.png)
 
 ## Najbolj pomembne oznake
 
