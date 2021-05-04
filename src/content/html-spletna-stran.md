@@ -8,6 +8,8 @@ description: 'Ustvari pravo spletno stran!'
 
 Je standardni jezik za ustvarjanje spletnih strani, ki opisuje **strukturo**. Vsebina je shranjena v datoteki s končnico html, na primer: `spletna_stran.html`.
 
+Za pisanje kode je priporočen program [VSCode](https://code.visualstudio.com/). Navodila za namestitev in uporabo si lahko preberete na povezavi: **[Namestitev VSCode](/vscode)**. Lahko uporabite tudi dodatek [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
 ### Primer enostavne spletne strani:
 
 ```html
