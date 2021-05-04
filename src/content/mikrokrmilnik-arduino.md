@@ -14,7 +14,7 @@ description: 'Napiši program za mikrokrmilnik Arduino in spoznaj delovanje elek
 
 > Stvari so dobavljive v Sloveniji, vendar lahko na spletu kupite različne kopije izdelkov, ki so občutno cenejše.
 
-![Slika 1](../images/mikrokrmilnik_arduino/slika-1.jpg)
+![Slika 1](../images/mikrokrmilnik-arduino/slika-1.jpg)
 
 ---
 
@@ -31,45 +31,45 @@ Vse kar mikrokrmilnik počne je to, da izvaja kodo, ki jo mi, kot programerji na
 Da bomo lahko led diode upravljali jih moramo za začetek priklopiti na arduino.
 
 Če imamo Arduino Nano, ga lahko kar direktno vstavimo na ploščo.
-![Arduino-1](../images/mikrokrmilnik_arduino/slika-2.jpg)
+![Arduino-1](../images/mikrokrmilnik-arduino/slika-2.jpg)
 
 ## LED Dioda
 
 LED Dioda je polprevondnik, kar pomeni, da prevaja električni tok le v eno smer. Da bo svetila jo moramo pravilno priklopiti. Na daljšo žico moramo priklopiti pozitivno napetost, na krajšo pa negativno.
 
 Shema vezja:
-![Vezje-1](../images/mikrokrmilnik_arduino/vezje.jpg)
+![Vezje-1](../images/mikrokrmilnik-arduino/vezje.jpg)
 
-![LED Dioda](../images/mikrokrmilnik_arduino/slika-3.jpg)
+![LED Dioda](../images/mikrokrmilnik-arduino/slika-3.jpg)
 
-![Priklop LED Diode](../images/mikrokrmilnik_arduino/slika-4.jpg)
+![Priklop LED Diode](../images/mikrokrmilnik-arduino/slika-4.jpg)
 
 Da električni tok ne bo premočen, ga omejimo z uporom 100 Ω.
 
-![Priklop upora](../images/mikrokrmilnik_arduino/slika-5.jpg)
+![Priklop upora](../images/mikrokrmilnik-arduino/slika-5.jpg)
 
 Vse skupaj povežemo na mikrokrmilnik, kot je to prikazano na sliki. Pini so na mikrokrmilniku označeni s številkami in črkami.
 
 Povežemo **-** na pin **GND**
-![Pin - na GND](../images/mikrokrmilnik_arduino/slika-6.jpg)
+![Pin - na GND](../images/mikrokrmilnik-arduino/slika-6.jpg)
 
 in pa **+** preko upora na pin **10** (na Arduino nano označen _D10_)
-![Pin + na 10](../images/mikrokrmilnik_arduino/slika-7.jpg)
+![Pin + na 10](../images/mikrokrmilnik-arduino/slika-7.jpg)
 
 # Nastavitve in nalaganje programa
 
 Program napišemo v **Arduino IDE**, nato pa ga prek USB kabla naložimo na mikrokrmilnik.
 
 Priklopimo USB kabel v Arduino, drug konec pa v računalnik.
-![USB](../images/mikrokrmilnik_arduino/slika-8.jpg)
+![USB](../images/mikrokrmilnik-arduino/slika-8.jpg)
 
 V meniju Oroja izberemo tip mikrokrmilnika (Arduino UNO / Arduino NANO), procesor (Pri Arduino UNO to ni potrebno), ter na katera USB vrata je priklopljen (Običajno Arduino IDE to zazna avtomatsko in samo zberemo vrata kjer piše, da je priklopljen)
 
-![Nastavitve](../images/mikrokrmilnik_arduino/ide-nastavitve.jpg)
+![Nastavitve](../images/mikrokrmilnik-arduino/ide-nastavitve.jpg)
 
 Ko bomo v nadaljevanju napisali kodo, jo naložimo s pritiskom na puščico v levem kotu. Če bodo kakršne koli napake v programu, se ne bo naložil, arduino IDE pa nam bo to tudi sporočil.
 
-![Nalozi](../images/mikrokrmilnik_arduino/ide-nalozi.jpg)
+![Nalozi](../images/mikrokrmilnik-arduino/ide-nalozi.jpg)
 
 # Program
 
