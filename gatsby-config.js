@@ -86,18 +86,18 @@ module.exports = {
         display: `standalone`,
         icons: [
           {
-            src: 'static/maskable_icon_128.png',
+            src: '/maskable_icon_128.png',
             sizes: '128x128',
             type: 'image/png',
             purpose: 'any maskable',
           },
           {
-            src: 'static/favicon-192x192.png',
+            src: '/favicon-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'static/favicon-512x512.png',
+            src: '/favicon-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
