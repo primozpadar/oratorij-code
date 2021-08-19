@@ -104,6 +104,19 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: ['/*'],
+        workboxConfig: {
+          runtimeCaching: [
+            {
+              urlPattern: /^https:\/\/fonts\.gstatic\.com/,
+              handler: 'CacheFirst',
+            },
+          ],
+        },
+      },
+    },
   ],
 };
