@@ -252,7 +252,7 @@ moja_funkcija()
 
 Izpis:
 
-```cmd
+```
 ta del kode je v funkciji
 ta del kode je v funkciji
 ```
