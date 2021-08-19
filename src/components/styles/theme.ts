@@ -1,10 +1,11 @@
 const theme = {
-  white: '#F8F8F8',
+  white: '#e8e8e8',
   green: '#0FD990',
   greenDark: '#1A8E64',
   blue: '#0B213F',
   blueDark: '#051325',
   blueLight: '#1A3A65',
+  blueStrong: '#2d79e0',
 };
 
 // generates type ThemeType from theme object

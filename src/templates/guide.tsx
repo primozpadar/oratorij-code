@@ -36,8 +36,22 @@ const PageTemplate: React.FC<PageTemplateProps> = ({ data }) => (
 );
 
 const Content = styled.div`
-  margin: 0 var(--site-margin);
+  margin: 0 auto;
   margin-bottom: 2rem;
+  max-width: 40vw;
+
+  @media (max-width: 1500px) {
+    max-width: 45vw;
+  }
+  @media (max-width: 1200px) {
+    max-width: 60vw;
+  }
+  @media (max-width: 800px) {
+    max-width: 80vw;
+  }
+  @media (max-width: 450px) {
+    max-width: 90vw;
+  }
 
   li,
   ul {
@@ -54,13 +68,13 @@ const Content = styled.div`
   }
 
   pre {
-    margin: 1rem auto 1rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 
   p {
-    margin: 1rem auto 1rem;
+    margin: 0.2rem 0 1rem 0;
     height: auto;
-    line-height: 1.45;
   }
 
   hr {
@@ -72,16 +86,18 @@ const Content = styled.div`
 
   h1,
   h2 {
-    padding: 1rem 0 0.1rem 0;
+    padding: 1.8rem 0 0.1rem 0;
     margin-bottom: 0.8rem;
     border-bottom: 1px solid ${(props) => props.theme.blueLight};
     page-break-after: avoid;
+    color: ${(props) => props.theme.blueStrong};
   }
 
   h3,
   h4,
   h5 {
-    margin: 0.8rem 0 0.2rem 0;
+    margin: 2rem 0 0.2rem 0;
+    color: ${(props) => props.theme.blueStrong};
   }
 
   a {

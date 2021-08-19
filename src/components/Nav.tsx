@@ -8,7 +8,7 @@ const Nav: React.FC = () => (
     <Link to="/">
       <Title>Oratorij Code</Title>
     </Link>
-    <GithubLink href="https://github.com/primozpadar">
+    <GithubLink href="https://github.com/primozpadar/oratorij-code">
       <GithubIcon />
       <span>Github</span>
     </GithubLink>
@@ -27,7 +27,7 @@ const Container = styled.div`
   }
 `;
 
-const GithubLink = styled.a`
+const GithubLink = styled.a.attrs({ target: '_blank' })`
   display: flex;
   justify-content: center;
   align-items: center;
