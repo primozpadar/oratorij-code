@@ -27,7 +27,7 @@ const Container = styled.div`
   }
 `;
 
-const GithubLink = styled.a.attrs({ target: '_blank' })`
+const GithubLink = styled.a.attrs({ target: '_blank', rel: 'noreferrer' })`
   display: flex;
   justify-content: center;
   align-items: center;
